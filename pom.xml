@@ -57,6 +57,17 @@
 		  <artifactId>infinispan-embedded</artifactId>
 		  <version>7.2.5.Final</version>
 		</dependency>
+		<dependency>
+		  <groupId>org.infinispan</groupId>
+		  <artifactId>infinispan-spring</artifactId>
+		  <version>7.2.5.Final</version>
+		  <exclusions>
+		    <exclusion>
+		        <groupId>javax.servlet</groupId>
+		        <artifactId>servlet-api</artifactId>
+		    </exclusion>
+		  </exclusions>
+		</dependency>
 		<!-- <dependency>
 		  <groupId>org.infinispan</groupId>
 		  <artifactId>infinispan-core</artifactId>
